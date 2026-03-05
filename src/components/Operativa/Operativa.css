@@ -1,0 +1,143 @@
+.operativa {
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 24px;
+}
+
+.operativa-wrapper {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.operativa-card {
+    background-color: #000000;
+    border-radius: 24px;
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    gap: 40px;
+    align-items: center;
+}
+
+.operativa-image {
+    background-color: #000000;
+    border-radius: 24px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 320px;
+}
+
+.operativa-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.operativa-content {
+    color: #ffffff;
+}
+
+.operativa-content h2 {
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    max-width: 520px;
+}
+
+.benefits {
+    display: grid;
+    gap: 14px;
+    margin-bottom: 20px;
+    margin-top: 4px;
+}
+
+.benefit-item {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 10px;
+    align-items: flex-start;
+    padding: 6px 0;
+}
+
+.benefit-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    position: relative;
+}
+
+.benefit-title {
+    font-weight: 700;
+    margin-bottom: 3px;
+    font-size: 16px;
+}
+
+.benefit-text {
+    font-size: 15px;
+    line-height: 1.5;
+    opacity: 0.95;
+}
+
+.button-row {
+    margin-top: 4px;
+}
+
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 999px;
+    padding: 9px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px);
+    background-color: #1d1b5c;
+    color: #ffffff;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.18);
+}
+
+@media (max-width: 900px) {
+    .operativa {
+        align-items: flex-start;
+    }
+
+    .operativa-card {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .operativa-image {
+        order: -1;
+    }
+}
+
+@media (max-width: 600px) {
+    .operativa-content h2 {
+        font-size: 24px;
+    }
+
+    .operativa-image {
+        padding: 16px;
+        border-radius: 18px;
+    }
+
+    .operativa {
+        padding: 48px 16px;
+    }
+}

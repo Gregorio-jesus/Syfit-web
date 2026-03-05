@@ -1,0 +1,108 @@
+.funciones {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.funciones-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 20px 72px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #141429;
+}
+
+.section-subtitle {
+    font-size: 15px;
+    color: #6a6a8a;
+    max-width: 640px;
+    margin: 10px auto 0;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px 36px;
+}
+
+.feature-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 20px 20px 22px;
+    box-shadow: 0 14px 35px rgba(11, 20, 63, 0.06);
+    border: 1px solid rgba(15, 23, 42, 0.04);
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 45px rgba(11, 20, 63, 0.10);
+    border-color: rgba(88, 99, 255, 0.35);
+}
+
+.feature-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #f4f5ff, #fff5f2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    flex-shrink: 0;
+}
+
+.feature-title {
+    font-size: 17px;
+    font-weight: 600;
+    color: #15153a;
+    margin-bottom: 6px;
+}
+
+.feature-text {
+    font-size: 14px;
+    color: #6a6a8a;
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .features-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .section-title {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 640px) {
+    .funciones-page {
+        padding: 32px 18px 52px;
+    }
+
+    .features-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .feature-card {
+        padding: 18px 16px 20px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+}
