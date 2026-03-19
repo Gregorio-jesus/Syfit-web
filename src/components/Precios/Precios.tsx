@@ -20,7 +20,7 @@ type Plan = {
 const plans: Plan[] = [
     {
         name: 'Syfit Básico',
-        price: '320 MXN',
+        price: '— MXN',
         period: 'mensualidad',
         description: 'Para micronegocios e instructores independientes que desean orden y control sin funciones avanzadas.',
         available: true,
@@ -39,7 +39,7 @@ const plans: Plan[] = [
     },
     {
         name: 'Syfit Estándar',
-        price: '549 MXN',
+        price: '— MXN',
         period: 'mensualidad',
         description: 'Para gimnasios en crecimiento que necesitan mayor control y herramientas.',
         inherits: 'Incluye todo lo del Básico',
