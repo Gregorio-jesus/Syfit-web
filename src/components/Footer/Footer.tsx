@@ -6,15 +6,15 @@ const contactItems = [
         icon: '/celular.png',
         alt: 'Teléfono',
         label: 'Teléfono',
-        value: '998 999 9999',
-        href: 'tel:+529989999999',
+        value: 'No disponible',
+        href: '#',
     },
     {
         icon: '/correo.png',
         alt: 'Correo',
         label: 'Correo electrónico',
-        value: 'hytechsaas@gmail.com',
-        href: 'mailto:hytechsaas@gmail.com',
+        value: 'No disponible',
+        href: '#',
     },
 ];
 
